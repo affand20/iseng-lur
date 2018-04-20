@@ -1,0 +1,59 @@
+#card-kegiatan{
+  top: -120px;
+  height: 500px;
+  overflow-y: scroll;
+}
+.right-menu{
+    float: right;
+}
+input, textarea, .custom-file{
+  width: 50%!important;
+}
+.form{
+  overflow-y: hidden;
+  padding-left: 39px;
+}
+.custom-file{
+  margin-bottom: 15px;
+}
+.mycard-header img, .mycard-header h2{
+  display: inline;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.img-preview{
+  max-width: 250px;
+  max-height: 250px;
+}
+.table{
+  margin-top: 20px;
+  text-align: center;
+}
+.details, .details:hover{
+  text-decoration: none;
+  color: #000;
+}
+.img-kegiatan{
+  max-width: 100px;
+  max-height: 100px;
+}
+.nothing{
+  align-items: center;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+}
+.nothing h4{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  #card-kegiatan{
+    height: 75vh;
+    padding: 25px;
+  }
+  input, textarea, .custom-file{
+    width: 100%!important;
+  }
+}

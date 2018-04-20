@@ -1,0 +1,90 @@
+html, body{
+  overflow: hidden;
+}
+nav{
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar-brand{
+  margin-left: 5%;
+  margin-right: 25%;
+}
+.navbar-brand img{
+  max-width: 50%;
+}
+.section-one{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: relative;
+}
+.school{
+  /* background: url('../../image/ppws.jpg') no-repeat center center fixed;
+  background-size: cover; */
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  top: -10%;
+  width: 100%;
+  z-index: -10;
+}
+.school img{
+  width: 100%;
+}
+.section-two{
+  height: 100vh;
+}
+.button{
+  /* background: #0000; */
+  background: linear-gradient(to right, #00C9FF 20%, #92FE9D 100%, #00C9FF 100%);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 35px;
+  color: #fff!important;
+  padding: 10px 17px;
+}
+
+.button:hover, .button:focus, .button:active{
+  /* background-color: #fff; */
+  background-position: right center;
+  box-shadow: 1px 0px 5px rgba(0,0,0,0.2);
+  /* color: #3AAB83!important; */
+  cursor: pointer;
+  outline: none!important;
+  text-decoration: none;
+  transition: 0.075s linear;
+}
+.center-text{
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-preview{
+  max-width: 100px;
+  max-height: 100px;
+}
+.links{
+  text-decoration: none!important;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+.links:hover{
+  color: #4ae0a9;
+}
+.navbar-toggler{
+  color: #fff!important;
+}
+@media only screen and (max-width: 768px) {
+  .school img{
+    height: 100%;
+    width: auto;
+  }
+  .school{
+    top: -13%;
+  }
+}

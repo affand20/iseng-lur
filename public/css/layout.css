@@ -1,0 +1,191 @@
+html, body{
+  height: 100vh;
+  max-width: 100%;
+  font-family: 'Raleway';
+  overflow: hidden;
+}
+.active{
+  color: #3AAB83!important;
+  font-weight: 700;
+}
+.content{
+  height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+.sidebar{
+  height: inherit;
+}
+.main-content{
+  height: inherit;
+}
+.sidebar, .main-content{
+  padding: 0;
+}
+.atas{
+  background-color: #3AAB83;
+  height: 200px;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.bawah{
+  height: 67.3vh;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #F8F8F8;
+}
+.brand img{
+  max-width: 130%;
+
+}
+#kanan-atas{
+  /* z-index: -20; */
+}
+.sidebar .atas{
+  padding-top: 20px;
+  /* position: relative; */
+}
+#profile-pic{
+  bottom: 30px;
+  position: absolute;
+}
+#profile-pic img{
+  width: 50px;
+}
+#profile-pic img, #profile-pic h6{
+  display: inline;
+}
+#profile-pic h6{
+  color: #fff;
+  padding-left: 15px;
+}
+.bawah .navigation{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.navigation a{
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.navigation a:hover{
+  color: #3AAB83!important;
+  font-weight: 700;
+}
+.main-content .bawah{
+  position: relative;
+}
+.mycard{
+  background-color: #fff;
+  border-radius: 3px;
+  bottom: 0;
+  box-shadow: 0 4px 12px -14px rgba(0, 0, 0, 0.01), 0 6px 26px -1px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  padding: 35px 50px 25px 50px;
+  margin-bottom: 10px;
+}
+.card-full{
+  height: 300px;
+  width: 95%;
+}
+.card-quarter{
+  height: 200px;
+  padding: 25px;
+  width: 40%;
+}
+.card-half{
+  height: 200px;
+  padding: 25px;
+  width: 57%;
+}
+.card-title{
+  color: #3AAB83;
+  font-weight: 800;
+}
+.button{
+  background: #0000;
+  border: 1px solid #fff;
+  border-radius: 35px;
+  color: #fff!important;
+  margin-top: 16px;
+  padding: 7px 17px;
+}
+.button:hover, .button-focus{
+  background-color: #fff;
+  box-shadow: 1px 0px 5px rgba(0,0,0,0.2);
+  color: #3AAB83!important;
+  text-decoration: none;
+  transition: 0.075s linear;
+}
+#logout-small{
+  visibility: hidden;
+}
+@media only screen and (max-width:768px) {
+  html, body{
+    overflow: scroll;
+  }
+  #logout-small{
+    visibility: visible;
+  }
+  #profile-pic{
+    float: right;
+    position: static;
+  }
+  #profile-pic h6{
+    display: none;
+  }
+  #profile-pic img{
+    width: 50px;
+  }
+  .brand{
+    width: 50%;
+  }
+  .atas .brand{
+    float: left;
+  }
+  .sidebar{
+    height: auto;
+  }
+  .sidebar .atas{
+    height: 60%;
+  }
+  .sidebar .bawah{
+    height: initial;
+    overflow-x: scroll;
+    padding: 0;
+    width: 100%;
+  }
+  .bawah .navigation{
+    display: inline-block;
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 140%;
+  }
+  .navigation a{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #kanan-atas{
+    display: none;
+  }
+  .main-content{
+    height: initial;
+  }
+  .main-content .bawah{
+    background-color: #fff;
+    height: initial;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .mycard{
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+}

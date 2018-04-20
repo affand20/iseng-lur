@@ -1,0 +1,45 @@
+#card-dashboard{
+  top: -120px;
+}
+.card-menu .mycard{
+  display: inline-block;
+  position: relative;
+  margin-top: 200px;
+  margin-right: 12px;
+}
+.mycard{
+  overflow-y: scroll;
+  padding-bottom: 0;
+}
+table{
+  text-align: center;
+}
+.img-foto{
+  max-width: 100px;
+  max-height: 100px;
+}
+.nothing{
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.nothing h6{
+  color: rgba(0, 0, 0, 0.5);
+}
+.not h4{
+  color: rgba(0, 0, 0, 1);
+}
+@media only screen and (max-width:768px) {
+  .card-menu .mycard{
+    margin-top: 45px;
+    margin-right: 0;
+  }
+  .mycard{
+    padding: 25px;
+  }
+  .card-kegiatan{
+    height: 280px;
+  }
+}
